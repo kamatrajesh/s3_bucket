@@ -7,3 +7,11 @@ resource "aws_s3_bucket" "b" {
   }
 }
 
+resource "aws_s3_bucket" "c" {
+  bucket = var.bucket1
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
