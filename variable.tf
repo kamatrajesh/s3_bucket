@@ -1,4 +1,5 @@
 variable "bucket" {
-  type    = list(string)
+  description = "bucket"
+  type =  string
   
 }
